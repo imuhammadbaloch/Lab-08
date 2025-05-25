@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Gallery - Gym Management{% endblock %}
+
+{% block content %}
+<center> <h1>Gym Gallery</h1> </center>
+   
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='gym_interior1.jpeg') }}" alt="Gym Interior 1">
+        <img src="{{ url_for('static', filename='gym_interior2.jpeg') }}" alt="Gym Interior 2">
+        <img src="{{ url_for('static', filename='gym_interior 3.jpeg') }}" alt="Gym Interior 3">
+        <img src="{{ url_for('static', filename='gym_interior 4.jpeg') }}" alt="Gym Interior 4">
+    </div>
+{% endblock %}
